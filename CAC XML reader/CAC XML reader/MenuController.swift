@@ -52,14 +52,17 @@ class MenuController: UIViewController, UITableViewDataSource, UITableViewDelega
         if selectionTypes[(indexPath as NSIndexPath).row] == .video
         {
             performSegue(withIdentifier: "playVideo", sender: self)
+            self.menuTableView.deselectRow(at: indexPath, animated: true)
         }
         else if selectionTypes[(indexPath as NSIndexPath).row] == .image
         {
             performSegue(withIdentifier: "showImage", sender: self)
+            self.menuTableView.deselectRow(at: indexPath, animated: true)
         }
         else if selectionTypes[(indexPath as NSIndexPath).row] == .pdf
         {
             performSegue(withIdentifier: "showPDF", sender: self)
+            self.menuTableView.deselectRow(at: indexPath, animated: true)
         }
         else if selectionTypes[(indexPath as NSIndexPath).row] == .menu
         {
@@ -79,6 +82,8 @@ class MenuController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        self.view.isUserInteractionEnabled = false
         
         if databaseRef == nil
         {
@@ -140,6 +145,9 @@ class MenuController: UIViewController, UITableViewDataSource, UITableViewDelega
                         }
                     }
                 }
+                
+                self.view.isUserInteractionEnabled = true
+                
                 DispatchQueue.main.async(execute: { () -> Void in
                     self.menuTableView.reloadData()
                 })
@@ -153,6 +161,9 @@ class MenuController: UIViewController, UITableViewDataSource, UITableViewDelega
         {
             let destinationViewController:MenuController = segue.destinationViewController as! MenuController
             let selectedRow = self.menuTableView.indexPathForSelectedRow?.row
+            let selectedIndexPath = self.menuTableView.indexPathForSelectedRow
+            
+            self.menuTableView.deselectRow(at: selectedIndexPath!, animated: true)
             
             destinationViewController.databaseRef = databaseRef.child(keys[selectedRow!])
             destinationViewController.menuTitle = self.titles[selectedRow!]
