@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E2DE92D1D0B3BDA0076595E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2DE92C1D0B3BDA0076595E /* AppDelegate.swift */; };
+		2E2DE9321D0B3BDA0076595E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2DE9301D0B3BDA0076595E /* Main.storyboard */; };
+		2E2DE9341D0B3BDA0076595E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2DE9331D0B3BDA0076595E /* Assets.xcassets */; };
+		2E2DE9371D0B3BDA0076595E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2DE9351D0B3BDA0076595E /* LaunchScreen.storyboard */; };
+		2E356DFF1D0B3D0000C01B3F /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E356DFE1D0B3D0000C01B3F /* VideoViewController.swift */; };
+		2E356E031D0B3D6400C01B3F /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E356E021D0B3D6400C01B3F /* MenuController.swift */; };
+		2E356E051D0B411F00C01B3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E356E041D0B411F00C01B3F /* GoogleService-Info.plist */; };
+		2E356E071D0B427100C01B3F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E356E061D0B427100C01B3F /* MenuCell.swift */; };
+		2E4B7B741D0C75C500F9B630 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B7B731D0C75C500F9B630 /* ImageViewController.swift */; };
+		2E4B7B761D0C82DA00F9B630 /* PdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B7B751D0C82DA00F9B630 /* PdfViewController.swift */; };
+		2E4B7B781D0C8FFF00F9B630 /* ServiceAccount.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4B7B771D0C8FFF00F9B630 /* ServiceAccount.json */; };
+		BB31C70A700211DAC95C9052 /* Pods_CAC_XML_reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA08182FE48B1E07C6D83799 /* Pods_CAC_XML_reader.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E2DE9291D0B3BDA0076595E /* CAC XML reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CAC XML reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E2DE92C1D0B3BDA0076595E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E2DE9311D0B3BDA0076595E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E2DE9331D0B3BDA0076595E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E2DE9361D0B3BDA0076595E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E2DE9381D0B3BDA0076595E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E356DFE1D0B3D0000C01B3F /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		2E356E021D0B3D6400C01B3F /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		2E356E041D0B411F00C01B3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E356E061D0B427100C01B3F /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		2E4B7B731D0C75C500F9B630 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		2E4B7B751D0C82DA00F9B630 /* PdfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfViewController.swift; sourceTree = "<group>"; };
+		2E4B7B771D0C8FFF00F9B630 /* ServiceAccount.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ServiceAccount.json; sourceTree = "<group>"; };
+		42DE0AC545F41507196FD6F5 /* Pods-CAC XML reader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAC XML reader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CAC XML reader/Pods-CAC XML reader.debug.xcconfig"; sourceTree = "<group>"; };
+		7C3B2BF411FB7A8E0CC57495 /* Pods-CAC XML reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAC XML reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-CAC XML reader/Pods-CAC XML reader.release.xcconfig"; sourceTree = "<group>"; };
+		BA08182FE48B1E07C6D83799 /* Pods_CAC_XML_reader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CAC_XML_reader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E2DE9261D0B3BDA0076595E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB31C70A700211DAC95C9052 /* Pods_CAC_XML_reader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E2DE9201D0B3BDA0076595E = {
+			isa = PBXGroup;
+			children = (
+				2E2DE92B1D0B3BDA0076595E /* CAC XML reader */,
+				2E2DE92A1D0B3BDA0076595E /* Products */,
+				2FEFB91EA0D1EA47E4C5A908 /* Pods */,
+				43BD157D1E519583D1E5C686 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E2DE92A1D0B3BDA0076595E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E2DE9291D0B3BDA0076595E /* CAC XML reader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E2DE92B1D0B3BDA0076595E /* CAC XML reader */ = {
+			isa = PBXGroup;
+			children = (
+				2E2DE92C1D0B3BDA0076595E /* AppDelegate.swift */,
+				2E356E021D0B3D6400C01B3F /* MenuController.swift */,
+				2E356DFE1D0B3D0000C01B3F /* VideoViewController.swift */,
+				2E4B7B731D0C75C500F9B630 /* ImageViewController.swift */,
+				2E4B7B751D0C82DA00F9B630 /* PdfViewController.swift */,
+				2E356E061D0B427100C01B3F /* MenuCell.swift */,
+				2E2DE9301D0B3BDA0076595E /* Main.storyboard */,
+				2E2DE9331D0B3BDA0076595E /* Assets.xcassets */,
+				2E2DE9351D0B3BDA0076595E /* LaunchScreen.storyboard */,
+				2E356E041D0B411F00C01B3F /* GoogleService-Info.plist */,
+				2E4B7B771D0C8FFF00F9B630 /* ServiceAccount.json */,
+				2E2DE9381D0B3BDA0076595E /* Info.plist */,
+			);
+			path = "CAC XML reader";
+			sourceTree = "<group>";
+		};
+		2FEFB91EA0D1EA47E4C5A908 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42DE0AC545F41507196FD6F5 /* Pods-CAC XML reader.debug.xcconfig */,
+				7C3B2BF411FB7A8E0CC57495 /* Pods-CAC XML reader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		43BD157D1E519583D1E5C686 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA08182FE48B1E07C6D83799 /* Pods_CAC_XML_reader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E2DE9281D0B3BDA0076595E /* CAC XML reader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E2DE93B1D0B3BDA0076595E /* Build configuration list for PBXNativeTarget "CAC XML reader" */;
+			buildPhases = (
+				4F135DF28DA50523C1E364A5 /* [CP] Check Pods Manifest.lock */,
+				B827EAB8FFE86521FD0AB4C1 /* [CP] Check Pods Manifest.lock */,
+				2E2DE9251D0B3BDA0076595E /* Sources */,
+				2E2DE9261D0B3BDA0076595E /* Frameworks */,
+				2E2DE9271D0B3BDA0076595E /* Resources */,
+				1C09AA353C2CA8F91301513C /* [CP] Embed Pods Frameworks */,
+				13DC33E933C420CA448E2A0A /* [CP] Copy Pods Resources */,
+				2E4B7B791D0C904800F9B630 /* ShellScript */,
+				5430CABE1962F0AF7DDAC7EC /* 📦 Embed Pods Frameworks */,
+				B4FA40A5C03E1C36AE599E7F /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CAC XML reader";
+			productName = "CAC XML reader";
+			productReference = 2E2DE9291D0B3BDA0076595E /* CAC XML reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E2DE9211D0B3BDA0076595E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = pjtnt11;
+				TargetAttributes = {
+					2E2DE9281D0B3BDA0076595E = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = L6W4234CSW;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2E2DE9241D0B3BDA0076595E /* Build configuration list for PBXProject "CAC XML reader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E2DE9201D0B3BDA0076595E;
+			productRefGroup = 2E2DE92A1D0B3BDA0076595E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E2DE9281D0B3BDA0076595E /* CAC XML reader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E2DE9271D0B3BDA0076595E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4B7B781D0C8FFF00F9B630 /* ServiceAccount.json in Resources */,
+				2E2DE9371D0B3BDA0076595E /* LaunchScreen.storyboard in Resources */,
+				2E2DE9341D0B3BDA0076595E /* Assets.xcassets in Resources */,
+				2E2DE9321D0B3BDA0076595E /* Main.storyboard in Resources */,
+				2E356E051D0B411F00C01B3F /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13DC33E933C420CA448E2A0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CAC XML reader/Pods-CAC XML reader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C09AA353C2CA8F91301513C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CAC XML reader/Pods-CAC XML reader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E4B7B791D0C904800F9B630 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Replace this path with the path to the key you just downloaded\nJSON_FILE=/Users/PJ/Desktop/CAC XML reader/CAC XML reader/ServiceAccount.json\n\n# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:114489989403:ios:8bb533265c427a6c\n\ndefaults write com.google.SymbolUpload version -integer 1   # creates file if it does not exist\nJSON=$(cat \"${JSON_FILE}\")\n/usr/bin/plutil -replace \"app_${GOOGLE_APP_ID//:/_}\" -json \"${JSON}\" \"$HOME/Library/Preferences/com.google.SymbolUpload.plist\"\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym";
+			showEnvVarsInLog = 0;
+		};
+		4F135DF28DA50523C1E364A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5430CABE1962F0AF7DDAC7EC /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CAC XML reader/Pods-CAC XML reader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4FA40A5C03E1C36AE599E7F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CAC XML reader/Pods-CAC XML reader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B827EAB8FFE86521FD0AB4C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E2DE9251D0B3BDA0076595E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4B7B761D0C82DA00F9B630 /* PdfViewController.swift in Sources */,
+				2E356E031D0B3D6400C01B3F /* MenuController.swift in Sources */,
+				2E356E071D0B427100C01B3F /* MenuCell.swift in Sources */,
+				2E2DE92D1D0B3BDA0076595E /* AppDelegate.swift in Sources */,
+				2E4B7B741D0C75C500F9B630 /* ImageViewController.swift in Sources */,
+				2E356DFF1D0B3D0000C01B3F /* VideoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2E2DE9301D0B3BDA0076595E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E2DE9311D0B3BDA0076595E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E2DE9351D0B3BDA0076595E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E2DE9361D0B3BDA0076595E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E2DE9391D0B3BDA0076595E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E2DE93A1D0B3BDA0076595E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E2DE93C1D0B3BDA0076595E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42DE0AC545F41507196FD6F5 /* Pods-CAC XML reader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "CAC XML reader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pjtnt11.CAC-XML-reader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2E2DE93D1D0B3BDA0076595E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C3B2BF411FB7A8E0CC57495 /* Pods-CAC XML reader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "CAC XML reader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pjtnt11.CAC-XML-reader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E2DE9241D0B3BDA0076595E /* Build configuration list for PBXProject "CAC XML reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E2DE9391D0B3BDA0076595E /* Debug */,
+				2E2DE93A1D0B3BDA0076595E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E2DE93B1D0B3BDA0076595E /* Build configuration list for PBXNativeTarget "CAC XML reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E2DE93C1D0B3BDA0076595E /* Debug */,
+				2E2DE93D1D0B3BDA0076595E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E2DE9211D0B3BDA0076595E /* Project object */;
+}
