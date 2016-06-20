@@ -15,6 +15,8 @@ class ImageViewController: UIViewController
     
     @IBOutlet var imageView: UIImageView!
     
+    var menuActivityIndicator:UIActivityIndicatorView = UIActivityIndicatorView.init(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
+    
     override func viewDidLoad()
     {
         storageRef = FIRStorage.storage().reference()
@@ -26,6 +28,16 @@ class ImageViewController: UIViewController
         self.title = imageTitle
         //print(imageName)
         
+        self.menuActivityIndicator.frame = CGRect.init(x: 0, y: 0, width: 100, height: 100)
+        self.menuActivityIndicator.layer.cornerRadius = 15
+        self.menuActivityIndicator.center = self.view.center
+        self.menuActivityIndicator.hidesWhenStopped = true
+        self.menuActivityIndicator.backgroundColor = UIColor.gray()
+        self.menuActivityIndicator.alpha = 0.5
+        self.view.addSubview(menuActivityIndicator)
+        
+        self.view.isUserInteractionEnabled = false
+        self.menuActivityIndicator.startAnimating()
         imageRef.data(withMaxSize: 50 * 1024 * 1024, completion: { (data, error) in
             if (error != nil)
             {
@@ -36,6 +48,8 @@ class ImageViewController: UIViewController
             else
             {
                 self.imageView.image = UIImage.init(data: data!)
+                self.menuActivityIndicator.stopAnimating()
+                self.view.isUserInteractionEnabled = true
             }
         })
         
