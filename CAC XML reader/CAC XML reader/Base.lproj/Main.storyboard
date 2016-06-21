@@ -63,7 +63,7 @@
                                         <frame key="frameInset" minY="136" width="383" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n3X-qT-5CR" id="Tfz-ON-44c">
-                                            <frame key="frameInset" width="383" height="43.5"/>
+                                            <frame key="frameInset" width="383" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -135,6 +135,9 @@
                             <constraint firstItem="M2t-8i-6QY" firstAttribute="centerY" secondItem="qKc-qW-OVX" secondAttribute="centerY" id="i1P-DZ-7IH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playVideoButton" destination="M2t-8i-6QY" id="GKA-WO-Q5w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcw-M4-HWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

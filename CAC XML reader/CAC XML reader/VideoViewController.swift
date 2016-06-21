@@ -13,9 +13,12 @@ import Firebase
 
 class VideoViewController: UIViewController
 {
+    @IBOutlet var playVideoButton: UIButton!
+    
     var videoUrl:URL!
     var storageRef:FIRStorageReference!
 
+    var menuActivityIndicator:UIActivityIndicatorView = UIActivityIndicatorView.init(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
     
     override func viewDidLoad()
     {
@@ -25,9 +28,20 @@ class VideoViewController: UIViewController
         let videoName = UserDefaults.standard().object(forKey: "fileName") as! String
         let videoRef = videosRef.child(videoName)
         
+        self.menuActivityIndicator.frame = CGRect.init(x: 0, y: 0, width: 75, height: 75)
+        self.menuActivityIndicator.layer.cornerRadius = 15
+        self.menuActivityIndicator.center = self.view.center
+        self.menuActivityIndicator.hidesWhenStopped = true
+        self.menuActivityIndicator.backgroundColor = UIColor.gray()
+        self.menuActivityIndicator.alpha = 0.75
+        self.view.addSubview(menuActivityIndicator)
+        
         self.title = videoTitle
         //print(videoName)
         
+        self.playVideoButton.isHidden = true
+        self.view.isUserInteractionEnabled = false
+        self.menuActivityIndicator.startAnimating()
         videoRef.downloadURL { (URL, error) in
             if (error != nil)
             {
@@ -57,6 +71,9 @@ class VideoViewController: UIViewController
     
     @IBAction func playVideo(_ sender: AnyObject)
     {
+        self.playVideoButton.isHidden = true
+        self.view.isUserInteractionEnabled = false
+        self.menuActivityIndicator.startAnimating()
         do
         {
             try playVideo()
@@ -64,18 +81,23 @@ class VideoViewController: UIViewController
         catch
         {
             print("Error")
+            fatalError()
         }
     }
     
     private func playVideo() throws
     {
         print(videoUrl)
+        try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
         let player = AVPlayer(url: videoUrl)
         let playerController = AVPlayerViewController()
         playerController.player = player
         self.present(playerController, animated: true)
         {
             player.play()
+            self.menuActivityIndicator.stopAnimating()
+            self.view.isUserInteractionEnabled = true
+            self.playVideoButton.isHidden = false
         }
     }
     
